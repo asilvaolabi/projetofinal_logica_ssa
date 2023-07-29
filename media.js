@@ -25,15 +25,15 @@ function calcularMedia() {
   if (media === 0){
     mensagem = " Infelizmente você zerou a prova :(";
    } else if (media <= 3){
-     mensagem = `Caramba, deu ruim, você obteve media ${media}! Estude mais e tente novamente!`;
+     mensagem = " Caramba, deu ruim, você obteve media " + media + "! Estude mais e tente novamente!";
     } else if (media <= 5.9){
-     mensagem = `Você obteve media ${media}! Falta pouco para a média.`;
+     mensagem = " Você obteve media " + media + " Falta pouco para a média.";
    } else if  (media <=7){
-     mensagem = `Você está na média com ${media}`;
+     mensagem = "Você está na média com " +media;
    } else if  (media <= 9.9){
-     mensagem = `Notão! Sua média é ${media}!`;
+     mensagem = " Notão! Sua média é " +media;
    } else {
-     mensagem = "Hoje é seu aniversário? Pq você ta de parabéns! 10 de média";
+     mensagem = " Hoje é seu aniversário? Pq você ta de parabéns! 10 de média ";
    }
 
   
