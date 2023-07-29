@@ -26,7 +26,7 @@ function calcularMedia() {
   if(media==0){
     mensagem = "infelizmente você zerou a nota:/"}
 
-    else if (media >= 0.1 && media <=3)
+    else if (media >= 0.1 && media <=3 )
 {
     mensagem =" Caramba,deu ruim,você obeteve media " + media + "! Estude mais e tente novamente!"
 }
