@@ -8,15 +8,36 @@
       "Você obteve media {nota}! Falta pouco para a média."
     4. Se a nota for entre 6 e 7, mostre na tela: "Você está na média com {nota}"
     5. Se a nota for entre 7.1 e 9.9, mostre na tela: "Notão! Sua média é {nota}!"
-    6. Se a nota for entre 10, mostre na tela: 
+    6. Se a nota for 10, mostre na tela: 
       "Hoje é seu aniversário? Pq você ta de parabéns! 10 de média"
 */
+
 function calcularMedia() {
-    const nota1 = parseFloat(document.getElementById("nota1").value);
-    const note2 = parseFloat(document.getElementById("nota2").value);
-    const note3 = parseFloat(document.getElementById("nota3").value);
-    const note4 = parseFloat(document.getElementById("nota4").value);
+  const nota1 = parseFloat(document.getElementById("nota1").value);
+  const nota2 = parseFloat(document.getElementById("nota2").value);
+  const nota3 = parseFloat(document.getElementById("nota3").value);
+  const nota4 = parseFloat(document.getElementById("nota4").value);
+
+  let mensagem = "";
+  // evite mexer no código acima!
+  let media = (nota1 + nota2 + nota3 + nota4)/4;
+
+  if (media === 0){
+    mensagem = " Infelizmente você zerou a prova :(";
+   } else if (media <= 3){
+     mensagem = `Caramba, deu ruim, você obteve media ${media}! Estude mais e tente novamente!`;
+    } else if (media <= 5.9){
+     mensagem = `Você obteve media ${media}! Falta pouco para a média.`;
+   } else if  (media <=7){
+     mensagem = `Você está na média com ${media}`;
+   } else if  (media <= 9.9){
+     mensagem = `Notão! Sua média é ${media}!`;
+   } else {
+     mensagem = "Hoje é seu aniversário? Pq você ta de parabéns! 10 de média";
+   }
+
   
+<<<<<<< HEAD
     let mensagem = "";
     // evite mexer no código acima!
          
@@ -44,3 +65,8 @@ function calcularMedia() {
     // evite mexer na linha de código abaixo!
     document.getElementById("situacaoAluno").innerHTML = mensagem;
   }
+=======
+  // evite mexer na linha de código abaixo!
+  document.getElementById("situacaoAluno").innerHTML = mensagem;
+}
+>>>>>>> 4a33ea1e827e7f96c03ec5abbda177c61d763ffa
