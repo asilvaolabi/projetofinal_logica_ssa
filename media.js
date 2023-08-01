@@ -41,7 +41,7 @@ else if ( media >=7.1 && media <=9.9) {
 }
  
 else if ( media <=10) {
-    mensagem =" Hoje é seu aniversario? Porque você está de parabéns .. sua nota é "+media+"."
+    mensagem =" Hoje é seu aniversario ? Porque você está de parabéns .. sua nota é "+media+"."
 }
 else { mensagem = "nota invalida"}
 
