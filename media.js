@@ -20,9 +20,26 @@ function calcularMedia() {
 
   let mensagem = "";
   // evite mexer no código acima!
+ let media1 = (nota1+nota2+nota3+nota4)/4
   
-
-  
+  if (media1 == 0){
+      mensagem = "você zerou a prova";
+  }
+  else if (media1 >= 0.1 &&  media1 <=3){
+      mensagem = "caramba deu ruim voce obteve media " + media1 + " estude mais e tente novamente"
+  }
+  else if (media1 >= 3.1 && media1 <= 5.9){
+      mensagem = "voce obteve media " + media1 + " falta pouco para a média."
+  }
+  else if (media1 >= 6 && media1 <= 7){
+      mensagem = "você está na média com "  + media1 + "."
+  }
+  else if (media1 >= 7.1 && media1 <= 9.9){
+      mensagem = "notão! sua média é " + media1 + "."
+  }
+  else  {
+      mensagem = "hoje é seu aniversário? pq você ta de parabéns! 10 de média"
+  }
   // evite mexer na linha de código abaixo!
   document.getElementById("situacaoAluno").innerHTML = mensagem;
 }
