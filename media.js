@@ -12,30 +12,6 @@
       "Hoje é seu aniversário? Pq você ta de parabéns! 10 de média"
 */
 
-var nota1= 5.5
-var nota2= 1.2
-var nota3= 3.9
-var nota4= 1.1
-var media = (nota1 + nota2 + nota3 + nota4) / 4;
-
-if (media === 0){
-console.log ("vc zerou a prova ");
-
-} else if (media > 0.1 && media < 3){
-console.log ("caramba, deu ruim, voce obteve media " + media + "estude mais e tente novamente" );
-} else if (media >= 3.1 && media <= 5.9){
-console.log (" voce obteve " + media + "falta pouco" );
-} else if (media >=6 && media < 7){
-console.log ("voce está na media com " + media );
-} else if (media >= 7.1 && media <= 9.9){
-console.log ("notão, sua media é " + media );
-} else {
-  console.log ("uau, voce quebrou e amassou!! sua média é " + media );
-}
-
-
-
-
 function calcularMedia() {
   const nota1 = parseFloat(document.getElementById("nota1").value);
   const nota2 = parseFloat(document.getElementById("nota2").value);
