@@ -11,4 +11,25 @@ Atenção: Você só vai editar o arquivo media.js
   2. Abra o arquivo `media.js` e siga as instruções para para que a soma passe a ser funcional.  
   3. Por fim, publique no Netlify!
   
- 
+ var media1 = 9.9;
+var media2 = 7.9;
+var media3 = 5.0;
+var media4 = 8.9;
+var media = (" media1+media2+media3+media4") /4
+if (" media == 0"){ 
+    console.log
+(" infelizmente você zerou a prova");
+    
+}
+else if  ( media >= 0.1 && media <= 3) {
+    console.log (" caramba deu ruim você obteve a media"+".");
+} 
+else if ( media >= 3.1 && media <= 5.9)
+{ console.log (" falta pouco para media ");
+}
+else if ( media >= 6 && media <= 7) { console.log (" você estar na media");
+}
+else if ( media >= 7.1 && media <= 9.9) { console.log (" você estar na media! parabens");
+}
+else { console.log (" final");
+}
