@@ -19,8 +19,7 @@ function calcularMedia() {
   const nota4 = parseFloat(document.getElementById("nota4").value);
 
   let mensagem = "";
-  // evite mexer no código acima!
- 
+  // evite mexer no código acima!git 
   let media = (nota1+nota2+nota3+nota4)/4;
   
   if (media == 0) {
