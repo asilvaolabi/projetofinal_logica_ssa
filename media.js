@@ -21,8 +21,25 @@ function calcularMedia() {
   let mensagem = "";
   // evite mexer no código acima!
   
+  var media = (nota1+nota2+nota3+nota4)/4;
 
-  
+if (media == 0) {
+    mensagem="infelizmente você zerou a prova";
+}
+else if (media >= 0.1 && media <= 3.0){
+  mensagem="caramba, deu ruim,você obteve media " + media + " Estude mais e tente novamente";
+}
+else if (media >= 3.1 && media <= 5.9) {
+  mensagem="você obteve media " + media + " Falta pouco para a media";
+} else if (media >= 6.0 && media <= 7.0) {
+  mensagem="você esta na media " + media;
+} else if (media >= 7.1 && media <= 9.9) {
+  mensagem="NOTAO sua media " + media;
+    } else if (media == 10) {
+      mensagem="hoje é seu aniversario? Pq você tá de PARABÉNS! 10 de media"
+}
+            
+         
   // evite mexer na linha de código abaixo!
   document.getElementById("situacaoAluno").innerHTML = mensagem;
 }
